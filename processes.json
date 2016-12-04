@@ -1,0 +1,29 @@
+{
+    "apps": [{
+            "name": "tunnel-a",
+            "script": "/usr/bin/env",
+            "args": "lt --port 8000 --subdomain yetfpxglpl",
+            "cwd": "/Users/jsyrinek/Development/help-rob",
+            "exec_mode": "fork_mode"
+        }, {
+            "name": "server-a",
+            "script": "/usr/bin/env",
+            "args": "php -S 0.0.0.0:8000",
+            "cwd": "/Users/jsyrinek/Development/help-rob",
+            "exec_mode": "fork_mode"
+		}, {
+			"name": "tunnel-b",
+			"script": "/usr/bin/env",
+			"args": "lt --port 8001 --subdomain rbhdsnowpq",
+			"cwd": "/Users/jsyrinek/Development/help-rob/destination",
+			"exec_mode": "fork_mode"
+        }, {
+            "name": "server-b",
+            "script": "/usr/bin/env",
+            "args": "php -S 0.0.0.0:8001",
+            "cwd": "/Users/jsyrinek/Development/help-rob/destination",
+            "exec_mode": "fork_mode"
+        }
+
+    ]
+}
